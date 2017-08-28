@@ -1,0 +1,8 @@
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\bin\Debug\Laboratorio1-MynorXico.exe.config
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\bin\Debug\Laboratorio1-MynorXico.exe
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\bin\Debug\Laboratorio1-MynorXico.pdb
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\Laboratorio1-MynorXico.csprojResolveAssemblyReference.cache
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\Laboratorio1_MynorXico.Properties.Resources.resources
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\Laboratorio1-MynorXico.csproj.GenerateResource.Cache
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\Laboratorio1-MynorXico.exe
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\Laboratorio1-MynorXico.pdb
