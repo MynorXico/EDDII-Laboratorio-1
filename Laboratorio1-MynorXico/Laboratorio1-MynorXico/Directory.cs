@@ -8,7 +8,7 @@ namespace Laboratorio1_MynorXico
 {
     class Directory
     {
-        public List<Song> Songs { get; set; }
+        public List<Song> Songs = new List<Song>();
 
         public void AddSong(Song s)
         {

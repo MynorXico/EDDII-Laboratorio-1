@@ -6,3 +6,10 @@ C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico
 C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\Laboratorio1-MynorXico.csproj.GenerateResource.Cache
 C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\Laboratorio1-MynorXico.exe
 C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\Laboratorio1-MynorXico.pdb
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\Laboratorio1_MynorXico.Form1.resources
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\Laboratorio1_MynorXico.PlaylistSelection.resources
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\Interop.WMPLib.dll
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\obj\Debug\Laboratorio1-MynorXico.csproj.ResolveComReference.cache
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\bin\Debug\Interop.WMPLib.dll
+C:\Users\Maynor\Documents\GitHub\EDII\EDDII-Laboratorio-1\Laboratorio1-MynorXico\Laboratorio1-MynorXico\bin\Debug\AxInterop.WMPLib.dll

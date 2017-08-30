@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Laboratorio1_MynorXico
 {
-    class PlayList
+    public class PlayList
     {
         public string Name { get; set; }
-        public List<Song> Songs { get; set; }
+        public List<Song> Songs = new List<Song>();
 
         public void AddSong(Song s)
         {
@@ -18,6 +18,14 @@ namespace Laboratorio1_MynorXico
         public PlayList(string Name)
         {
             this.Name = Name;
+        }
+        public void SortByName()
+        {
+            this.Songs = Songs.OrderBy(x => x.Name).ToList<Song>();
+        }
+        public void SortByLength()
+        {
+            this.Songs = Songs.OrderBy(x => x.Length).ToList<Song>();
         }
     }
 }
