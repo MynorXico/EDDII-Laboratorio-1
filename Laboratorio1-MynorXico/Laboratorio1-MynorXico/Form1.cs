@@ -13,6 +13,8 @@ namespace Laboratorio1_MynorXico
 {
     public partial class Form1 : Form
     {
+        bool btnNombre = false;
+        bool btnDuracion = false;
         bool btnCreate = false;
         bool btnAdd = false;
         Player p = new Player();
@@ -50,7 +52,10 @@ namespace Laboratorio1_MynorXico
                 txtNewPlaylist.Visible = true;
                 btnVerLista.Visible = false;
                 btnVerBiblioteca.Visible = false;
+                btnOrdenarPorDuración.Visible = false;
+                btnOrdenarPorNombre.Visible = false;
                 txtNewPlaylist.Text = "";
+                txtNewPlaylist.Focus();
             }
             else
             {
@@ -78,6 +83,8 @@ namespace Laboratorio1_MynorXico
                 txtNewPlaylist.Visible = false;
                 btnVerLista.Visible = true;
                 btnVerBiblioteca.Visible = true;
+                btnOrdenarPorDuración.Visible = true;
+                btnOrdenarPorNombre.Visible = true;
             }
         }
 
@@ -154,6 +161,8 @@ namespace Laboratorio1_MynorXico
 
         private void btnOrdenarPorNombre_Click(object sender, EventArgs e)
         {
+            btnNombre = !btnNombre;
+            
             string name = "";
             try
             {
@@ -167,7 +176,7 @@ namespace Laboratorio1_MynorXico
             {
                 if (pl.Name == name)
                 {
-                    pl.SortByName();
+                    pl.SortByName(btnNombre);
                     p.FillGrid(dgvSongs, pl.Songs);
                 }
             }
@@ -175,6 +184,7 @@ namespace Laboratorio1_MynorXico
 
         private void btnOrdenarPorDuración_Click(object sender, EventArgs e)
         {
+            btnDuracion = !btnDuracion;
             string name = "";
             try
             {
@@ -188,7 +198,7 @@ namespace Laboratorio1_MynorXico
             {
                 if (pl.Name == name)
                 {
-                    pl.SortByLength();
+                    pl.SortByLength(btnDuracion);
                     p.FillGrid(dgvSongs, pl.Songs);
                 }
             }
@@ -197,6 +207,23 @@ namespace Laboratorio1_MynorXico
         private void btnBusqueda_Click(object sender, EventArgs e)
         {
             Song s = p.SongsInDisk.Songs.Find(x => x.Name == txtBusqueda.Text);
+            List<Song> lst = new List<Song>();
+            lst.Add(s);
+            p.FillGrid(dgvSongs, lst);
+        }
+
+        private void dgvSongs_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dgvSongs_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string name = dgvSongs.Rows[dgvSongs.CurrentCell.RowIndex].Cells[0].Value.ToString();
+            Song s = p.SongsInDisk.Songs.Find(x => x.Name == name);
+            axWindowsMediaPlayer1.Ctlenabled = true;
+            axWindowsMediaPlayer1.URL = s.Path;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
         }
     }
 }

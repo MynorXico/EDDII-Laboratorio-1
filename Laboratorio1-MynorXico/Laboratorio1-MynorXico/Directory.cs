@@ -8,8 +8,10 @@ namespace Laboratorio1_MynorXico
 {
     class Directory
     {
+        // Songs in hard drive
         public List<Song> Songs = new List<Song>();
 
+        // Add song to library
         public void AddSong(Song s)
         {
             Songs.Add(s);

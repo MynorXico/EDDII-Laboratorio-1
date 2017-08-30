@@ -10,9 +10,8 @@ namespace Laboratorio1_MynorXico
     {
         public string Name { get; set; }
         public double Length { get; set; }
-        // In case the song has to be playable.
+        // In case the song has to be playable
         public string Path { get; set; }
-        // public string Artist { get; set; }
         public Song(string Name, double Length, string Path)
         {
             this.Name = Name;
