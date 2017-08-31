@@ -31,11 +31,20 @@ namespace Laboratorio1_MynorXico
         public void FillGrid(DataGridView dgv, List<Song> list)
         {
             // Checks if the file is empty
-            if (list[0] == null)
+            try
+            {
+                if (list[0] == null)
+                {
+                    MessageBox.Show("No hay canciones por mostrar");
+                    return;
+                }
+            }
+            catch
             {
                 MessageBox.Show("No hay canciones por mostrar");
                 return;
             }
+           
             // clears datagridview rows
             dgv.Rows.Clear();
             dgv.DataSource = null;

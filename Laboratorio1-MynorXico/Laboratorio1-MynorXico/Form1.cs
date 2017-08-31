@@ -27,6 +27,10 @@ namespace Laboratorio1_MynorXico
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
             fbd.ShowDialog();
+            if(fbd.SelectedPath == "")
+            {
+                return;
+            }
             string[] dirs = System.IO.Directory.GetFiles(fbd.SelectedPath, "*.mp3");
             for(int i = 0; i < dirs.Length; i++)
             {
@@ -125,8 +129,28 @@ namespace Laboratorio1_MynorXico
             }
             else
             {
-                string name = dgvSongs.Rows[dgvSongs.CurrentCell.RowIndex].Cells[0].Value.ToString();
-                
+                string name = "";
+                if(Name == null)
+                {
+                    return;
+                }
+                try
+                {
+                    name = dgvSongs.Rows[dgvSongs.CurrentCell.RowIndex].Cells[0].Value.ToString();
+                }
+                catch
+                {
+                    return;
+                }
+
+                try
+                {
+                    lbSeleccionListas.SelectedItem.ToString();
+                }
+                catch
+                {
+                    return;
+                }
                 btnAdd = false;
                 btnAgregarALista.Text = "Agregar a lista";
                 lblSeleccionListas.Visible = false;

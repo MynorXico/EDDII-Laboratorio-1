@@ -50,9 +50,9 @@ namespace Laboratorio1_MynorXico
         {
             // If it's ordered ascendent the array is ordered descendennt
             if (ascendent)
-                this.Songs = Songs.OrderBy(x => x.Name).ToList<Song>();
+                this.Songs = Songs.OrderBy(x => x.Length).ToList<Song>();
             else
-                this.Songs = Songs.OrderByDescending(x => x.Name).ToList<Song>();
+                this.Songs = Songs.OrderByDescending(x => x.Length).ToList<Song>();
         }
     }
 }
